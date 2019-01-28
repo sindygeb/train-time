@@ -1,5 +1,3 @@
-# train-time
-
 # Firebase Assignment - Train Scheduler
 
 
