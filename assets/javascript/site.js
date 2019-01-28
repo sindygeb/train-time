@@ -56,9 +56,6 @@ $(document).ready(function(){
 
         //convert time for first train
         var firstTrain = moment(trainTime, "HH:mm").subtract(1, "years");
-        
-        //current time (momentjs)
-        var currentTime = moment();
 
         // Difference between the current and Time
         var timeDiff = moment().diff(firstTrain, "minutes");
@@ -72,14 +69,7 @@ $(document).ready(function(){
 
         var nextTrain = moment().add(timeUntil, "minutes");
         var trainFormat = moment(nextTrain).format("HH:mm");
-
-        //couldn't figure out how to make it reset to the next time.
-        //var timeUntil = moment(firstTrain).fromNow();
-        //couldn't get this to work...
-        //var finalTime = moment.duration(timeNew).asMinutes();
-        //console.log(timeUntil);
-        //didn't work
-        //console.log(finalTime);
+ 
 
 
         //it's not pretty, but it works...
